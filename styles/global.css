@@ -3,9 +3,16 @@
   margin: 0;
 }
 
+:root {
+  --gray-900: #334;
+  --gray-500: #445;
+  --gray-100: #ddd;
+  --red-500: #e23b62;
+}
+
 body {
-  background-color: #334;
-  color: #ccc;
+  background-color: var(--gray-900);
+  color: var(--gray-100);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 

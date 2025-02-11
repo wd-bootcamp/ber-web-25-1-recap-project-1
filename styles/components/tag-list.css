@@ -5,7 +5,7 @@
 }
 
 .tag-list__item {
-  background-color: #ddd;
+  background-color: var(--gray-100);
   color: #334;
   padding: 2px 4px;
   border-radius: 4px;

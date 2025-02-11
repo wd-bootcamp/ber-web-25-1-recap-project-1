@@ -13,6 +13,6 @@
 }
 
 .bookmark__icon--active {
-  color: rgb(226, 59, 98);
+  color: var(--red-500);
   fill: currentColor;
 }
