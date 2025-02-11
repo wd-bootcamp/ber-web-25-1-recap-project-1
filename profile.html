@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
+  <body class="layout">
+    <header class="layout__heading">
+      <h1>Quizzzle</h1>
+    </header>
+    <main class="profile">
+      <div class="profile__top-wrapper">
+        <h2 class="profile__name">Jane Doe</h2>
+        <img
+          class="profile__image"
+          src="https://randomuser.me/api/portraits/women/18.jpg"
+          alt=""
+        />
+      </div>
+      <p class="profile__bio">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium sunt
+        id, impedit quibusdam exercitationem, nihil commodi voluptatem eaque
+        illo dicta nulla maxime doloribus non dolor aut! Aspernatur similique
+        assumenda eum?
+      </p>
+      <ul class="counter">
+        <li class="counter__item">
+          <svg
+            class="counter__icon"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z" />
+          </svg>
+          <span class="counter__value">9</span>
+        </li>
+        <li class="counter__item">
+          <svg
+            class="counter__icon"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M20 6 9 17l-5-5" />
+          </svg>
+          <span class="counter__value">2</span>
+        </li>
+      </ul>
+      <label class="dark-mode">
+        Dark Mode
+        <input type="checkbox" hidden />
+        <div class="dark-mode__toggle">
+          <div class="dark-mode__toggle-handle"></div>
+        </div>
+      </label>
+    </main>
+    <nav class="layout__navigation">
+      <ul class="nav">
+        <li class="nav__item">
+          <a class="nav__link" href="/">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-house"
+            >
+              <path id="home" d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" />
+              <path
+                d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"
+              />
+            </svg>
+          </a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="/bookmarks.html">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-bookmark"
+            >
+              <path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z" />
+            </svg>
+          </a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link nav__link--active" href="/profile.html">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-user"
+            >
+              <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
+              <circle cx="12" cy="7" r="4" />
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </body>
+</html>

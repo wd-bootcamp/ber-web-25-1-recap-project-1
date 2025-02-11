@@ -1,0 +1,28 @@
+.dark-mode {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dark-mode__toggle {
+  display: grid;
+  width: 55px;
+  height: 35px;
+  background-color: var(--gray-500);
+  border-radius: 999px;
+  border: solid 2px;
+  padding: 4px;
+}
+
+.dark-mode__toggle-handle {
+  background-color: var(--gray-100);
+  height: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 999px;
+  justify-self: start;
+}
+
+input:checked ~ .dark-mode__toggle > .dark-mode__toggle-handle {
+  justify-self: end;
+  background-color: var(--red-500);
+}

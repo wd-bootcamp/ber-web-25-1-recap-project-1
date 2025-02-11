@@ -1,0 +1,15 @@
+.counter {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.counter__item {
+  background-color: var(--gray-100);
+  color: var(--gray-900);
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
