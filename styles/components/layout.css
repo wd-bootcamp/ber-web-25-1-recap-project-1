@@ -1,0 +1,23 @@
+.layout__heading {
+  padding: 1rem;
+  background-color: inherit;
+  text-align: center;
+  border-bottom: 1px solid;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.layout__card-list {
+  display: grid;
+  gap: 1rem;
+  padding: 2rem 0.5rem;
+}
+
+.layout__navigation {
+  background-color: inherit;
+  position: sticky;
+  bottom: 0;
+  border-top: 1px solid;
+  z-index: 2;
+}

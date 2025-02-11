@@ -1,0 +1,18 @@
+.bookmark {
+  position: absolute;
+  top: -12px;
+  right: 10px;
+  background-color: transparent;
+  color: inherit;
+  border: none;
+}
+
+.bookmark__icon {
+  width: 48px;
+  height: 48px;
+}
+
+.bookmark__icon--active {
+  color: rgb(226, 59, 98);
+  fill: currentColor;
+}
