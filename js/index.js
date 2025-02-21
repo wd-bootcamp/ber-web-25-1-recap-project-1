@@ -190,11 +190,22 @@ function ProfilePage() {
       </ul>
       <label class="dark-mode">
         Dark Mode
-        <input type="checkbox" hidden />
+        <input type="checkbox" hidden data-js='dark-mode-toggle' ${
+          document.body.classList.contains("dark") ? "checked" : ""
+        }/>
         <div class="dark-mode__toggle">
           <div class="dark-mode__toggle-handle"></div>
         </div>
       </label>`;
+
+  const toggle = getElement("dark-mode-toggle", profile);
+  toggle.addEventListener("change", () => {
+    if (toggle.checked) {
+      document.body.classList.add("dark");
+    } else {
+      document.body.classList.remove("dark");
+    }
+  });
   wrapper.append(profile);
 }
 
