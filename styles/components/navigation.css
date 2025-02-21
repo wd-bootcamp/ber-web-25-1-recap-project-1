@@ -8,10 +8,13 @@
 
 .nav__link {
   width: 100%;
+  background-color: inherit;
+  border: none;
   display: grid;
   place-items: center;
   padding: 1rem 2rem;
   color: inherit;
+  cursor: pointer;
 }
 
 .nav__link--active {
