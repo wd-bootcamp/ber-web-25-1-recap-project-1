@@ -279,21 +279,17 @@ function Tag(tag) {
   return tagElement;
 }
 
-function getElement(datajsTag, element = document) {
-  return element.querySelector(`[data-js="${datajsTag}"]`);
-}
-
 function Form() {
   const form = document.createElement("form");
   form.className = "form";
   form.innerHTML = ` <label>
     Question
     <input type="text" name="question" />
-  </label>
+    </label>
   <label>
     Answer
     <input type="text" name="answer" />
-  </label>  <label>
+    </label>  <label>
     Tags
     <input type="text" name="tags" />
   </label>
@@ -316,4 +312,8 @@ function Form() {
   });
 
   return form;
+}
+
+function getElement(datajsTag, element = document) {
+  return element.querySelector(`[data-js="${datajsTag}"]`);
 }
