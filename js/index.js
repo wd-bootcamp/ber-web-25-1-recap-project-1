@@ -302,6 +302,7 @@ function Form() {
     const data = Object.fromEntries(formData);
 
     const newQuestion = {
+      id: crypto.randomUUID(),
       question: data.question,
       answer: data.answer,
       tags: data.tags.split(","),
