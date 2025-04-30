@@ -3,128 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Quiz App</title>
     <link rel="stylesheet" href="./styles/styles.css" />
+    <script type="module" src="./js/index.js"></script>
   </head>
   <body class="layout">
     <header class="layout__heading">
       <h1>Quizzzle</h1>
     </header>
-    <main>
-      <ul class="layout__card-list">
-        <li>
-          <article class="card">
-            <h2 class="card__question">Question 1?</h2>
-            <button class="card__button">Show Answer</button>
-            <span class="card__answer">Answer 1</span>
-            <ul class="tag-list">
-              <li class="tag-list__item">tag 1</li>
-            </ul>
-            <button class="bookmark">
-              <svg
-                class="bookmark__icon"
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z" />
-              </svg>
-            </button>
-          </article>
-        </li>
-        <li>
-          <article class="card">
-            <h2 class="card__question">Question 2?</h2>
-            <button class="card__button">Hide Answer</button>
-            <span class="card__answer card__answer--visible">Answer 2</span>
-            <ul class="tag-list">
-              <li class="tag-list__item">tag 1</li>
-              <li class="tag-list__item">tag 2</li>
-            </ul>
-            <button class="bookmark">
-              <svg
-                class="bookmark__icon bookmark__icon--active"
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z" />
-              </svg>
-            </button>
-          </article>
-        </li>
-        <li>
-          <article class="card">
-            <h2 class="card__question">Question 3?</h2>
-            <button class="card__button">Show Answer</button>
-            <span class="card__answer">Answer 3</span>
-            <ul class="tag-list">
-              <li class="tag-list__item">tag 1</li>
-              <li class="tag-list__item">tag 2</li>
-            </ul>
-            <button class="bookmark">
-              <svg
-                class="bookmark__icon"
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z" />
-              </svg>
-            </button>
-          </article>
-        </li>
-        <li>
-          <article class="card">
-            <h2 class="card__question">Question 4?</h2>
-            <button class="card__button">Show Answer</button>
-            <span class="card__answer">Answer 4</span>
-            <ul class="tag-list">
-              <li class="tag-list__item">tag 1</li>
-              <li class="tag-list__item">tag 2</li>
-            </ul>
-            <button class="bookmark">
-              <svg
-                class="bookmark__icon"
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z" />
-              </svg>
-            </button>
-          </article>
-        </li>
-      </ul>
-    </main>
+    <main data-js="page-wrapper"></main>
     <nav class="layout__navigation">
       <ul class="nav">
         <li class="nav__item">
-          <a class="nav__link nav__link--active" href="/">
+          <button data-js="nav-button-home" class="nav__link nav__link--active">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -135,17 +26,16 @@
               stroke-width="2"
               stroke-linecap="round"
               stroke-linejoin="round"
-              class="lucide lucide-house"
             >
               <path id="home" d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" />
               <path
                 d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"
               />
             </svg>
-          </a>
+          </button>
         </li>
         <li class="nav__item">
-          <a class="nav__link" href="/bookmarks.html">
+          <button data-js="nav-button-bookmarks" class="nav__link">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -156,14 +46,24 @@
               stroke-width="2"
               stroke-linecap="round"
               stroke-linejoin="round"
-              class="lucide lucide-bookmark"
             >
               <path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z" />
             </svg>
-          </a>
+          </button>
         </li>
         <li class="nav__item">
-          <a class="nav__link" class="nav__link" href="/profile.html">
+          <button data-js="nav-button-add" class="nav__link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-plus"><path d="M5 12h14"/><path d="M12 5v14"/></svg>
+              <path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z" />
+            </svg>
+          </button>
+        </li>
+        <li class="nav__item">
+          <button
+            data-js="nav-button-profile"
+            class="nav__link"
+            class="nav__link"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -174,14 +74,14 @@
               stroke-width="2"
               stroke-linecap="round"
               stroke-linejoin="round"
-              class="lucide lucide-user"
             >
               <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
               <circle cx="12" cy="7" r="4" />
             </svg>
-          </a>
+          </button>
         </li>
       </ul>
     </nav>
   </body>
 </html>
+
