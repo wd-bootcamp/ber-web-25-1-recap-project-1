@@ -1,7 +1,11 @@
 .layout {
+  display: flex;
+  flex-direction: column;
   min-height: 100dvh;
-  display: grid;
-  grid-template-rows: auto 1fr auto;
+}
+
+.layout__main {
+  flex: 1;
 }
 
 .layout__heading {
